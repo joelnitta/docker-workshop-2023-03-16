@@ -26,7 +26,7 @@ format:
   - [Windows](https://carpentries-incubator.github.io/docker-introduction/setup.html#microsoft-windows)
   - [Mac](https://carpentries-incubator.github.io/docker-introduction/setup.html#apple-macos)
   - [Linux](https://carpentries-incubator.github.io/docker-introduction/setup.html#linux)
-- [docker-intro.zip](https://carpentries-incubator.github.io/docker-introduction/files/docker-intro.zip)をダウンロードして、拡張して、デスクトップに置く
+- [docker-intro.zip](https://carpentries-incubator.github.io/docker-introduction/files/docker-intro.zip)をダウンロードして、開いて、デスクトップに置く
 
 # PR: ソフトウェア・<br>カーペントリー<br>について
 
@@ -80,19 +80,19 @@ format:
 
 ## レッスン Lessons
 
-基本レッスン: unix, git, python, R
+[基本レッスン](https://software-carpentry.org/lessons/): unix, git, python, R
 
 ![](images/swc-core-lessons.png)
 
 ## レッスン Lessons
 
-追加レッスン: make, MATLAB, SQL, Docker
+[追加レッスン](https://software-carpentry.org/lessons/): make, MATLAB, SQL, Docker
 
 ![](images/swc-add-lessons.png)
 
 ## ザ・カーペントリーズ<br>The Carpentries
 
-Data Carpentry, Library Carpentry, Software Carpentry
+[Data Carpentry, Library Carpentry, Software Carpentry](https://carpentries.org/)
 
 ![](images/carp-header.png)
 
@@ -118,6 +118,8 @@ Data Carpentry, Library Carpentry, Software Carpentry
 
 ## 日本語チーム
 
+- [https://swcarpentry-ja.github.io/](https://swcarpentry-ja.github.io/)
+
 - Twitter: @swcarpentry_ja
 
 - Slack: [https://swc-slack-invite.herokuapp.com/](https://swc-slack-invite.herokuapp.com/)
@@ -135,7 +137,14 @@ Data Carpentry, Library Carpentry, Software Carpentry
 
 ---
 
-ドッカーはあなたのお悩みを解決してくれる（はず）
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+
+### ドッカーはあなたのお悩みを解決してくれる（はず）
 
 ## ドッカーとは？
 
@@ -188,7 +197,7 @@ Data Carpentry, Library Carpentry, Software Carpentry
 
 ::::
 
----
+## コンテナとバーチャルマシンの違い
 
 ![](images/container_vs_vm.jpg){fig-alt="Comparison of containers vs virtual machines" align="center"}
 
