@@ -1,0 +1,197 @@
+---
+format:
+  revealjs:
+    slide-level: 2
+    css: styles.css
+    slide-number: true
+    self-contained: true
+    from: markdown+emoji
+---
+
+## ドッカー入門ワークショップ
+
+**ニッタ ジョエル**
+
+[https://joelnitta.github.io/docker-workshop-2023-03-16](https://joelnitta.github.io/docker-workshop-2023-03-16)
+
+[![](https://www.docker.com/wp-content/uploads/2022/03/Moby-logo.png){fig-alt="Docker logo" height="200"}]{.right}
+
+## 資料
+
+今回使っているレッスン：[https://carpentries-incubator.github.io/docker-introduction/](https://carpentries-incubator.github.io/docker-introduction/)
+
+## 準備
+
+- Docker Desktopをインストールする
+  - [Windows](https://carpentries-incubator.github.io/docker-introduction/setup.html#microsoft-windows)
+  - [Mac](https://carpentries-incubator.github.io/docker-introduction/setup.html#apple-macos)
+  - [Linux](https://carpentries-incubator.github.io/docker-introduction/setup.html#linux)
+- [docker-intro.zip](https://carpentries-incubator.github.io/docker-introduction/files/docker-intro.zip)をダウンロードして、拡張して、デスクトップに置く
+
+# PR: ソフトウェア・<br>カーペントリー<br>について
+
+## ソフトウェア・カーペントリー<br>（SWC）とは？
+
+- 無償でコードを教えるワークショップ
+
+- ボランティアによって運営されている
+
+- 研究者にコードのベストプラクティスを教える
+
+![](images/swc_header.png){fig-alt="SWC website logo" fig-align="center"}
+
+## 2012年より、54ヵ国で合計1796回
+
+![](images/map.png)
+
+## 問題
+
+- 研究者は最近コードを使えざるを得ない
+
+- ほとんどは独学で覚えている
+
+- が、効率はあまり良くない
+
+![](https://2.bp.blogspot.com/-3Zik2AGqMlM/W-0gea-VWRI/AAAAAAABQKE/b0xXQ9ZeGJIOyS_1xqt_qHRmrmtOf6J7ACLcBGAs/s400/computer_typing_osoi.png){fig-alt="Frustrated person at computer" height="300" fig-align="center"}
+
+## SWCの解決法
+
+- 研究者が**コミュニティを作って**、互いに教え合う
+
+- フィードバックを重視する
+
+- 二日間にわたるワークショップ
+
+- ３−４レッスンを教える
+
+![](https://4.bp.blogspot.com/-v-d7JYMZJn0/VvKZKMuZhzI/AAAAAAAA5FQ/p8m3U0QRZ8kI8mbkOv0uMEZrwT7F5Baiw/s450/seminor_woman.png){fig-alt="People teaching each other" height="300" fig-align="center"}
+
+## ワークショップ Workshops
+
+- 誰でも参加できる
+
+- 無料か少額
+
+- ワークショップ前後にアンケートを実施
+
+- 改善のためのフィードバックは重視されている
+
+![](https://software-carpentry.org/files/workshops/mit-2013-slice.jpg){fig-alt="Workshop participants" height="150" fig-align="center"}
+
+## レッスン Lessons
+
+基本レッスン: unix, git, python, R
+
+![](images/swc-core-lessons.png)
+
+## レッスン Lessons
+
+追加レッスン: make, MATLAB, SQL, Docker
+
+![](images/swc-add-lessons.png)
+
+## ザ・カーペントリーズ<br>The Carpentries
+
+Data Carpentry, Library Carpentry, Software Carpentry
+
+![](images/carp-header.png)
+
+## データ・カーペントリーのレッスン
+
+![](images/dc-genomics-lessons.png)
+
+## インストラクター
+
+:::: {.columns}
+
+::: {.column width="50%"}
+- ボランテイア
+
+- 合格するためには講習への<br>参加と模擬授業の試験を<br>受ける必要がある
+:::
+
+::: {.column width="50%"}
+![](images/certificate.png){fig-alt="Instructor certificate" height="300"}
+:::
+
+::::
+
+## 日本語チーム
+
+- Twitter: @swcarpentry_ja
+
+- Slack: [https://swc-slack-invite.herokuapp.com/](https://swc-slack-invite.herokuapp.com/)
+  - `#local-ja`チャンネル
+
+- GitHub repo: [https://github.com/swcarpentry-ja/i18n/](https://github.com/swcarpentry-ja/i18n/)
+
+![](https://4.bp.blogspot.com/-Q6dyWG9-rBs/UrlmwEb2YSI/AAAAAAAAcLc/uoaFgnGVfvo/s400/text_bosyuchu.png){fig-alt="Banner saying we are recruiting" height="250" fig-align="center"}
+
+# ドッカー入門<br>ワークショップ
+
+## 研究用オープンソース・<br>ソフトウエアの問題点
+
+- 今までの困ったことについて話しましょう
+
+---
+
+ドッカーはあなたのお悩みを解決してくれる（はず）
+
+## ドッカーとは？
+
+:::: {.columns}
+
+::: {.column width="50%"}
+- コンテナを管理するソフト
+:::
+
+::: {.column width="50%"}
+![](https://www.docker.com/wp-content/uploads/2022/03/Moby-logo.png){fig-alt="Docker logo"}
+:::
+
+::::
+
+## コンテナとは？
+
+:::: {.columns}
+
+::: {.column width="50%"}
+- あるアプリに必要な環境を**OSレベル**でパッケージ化してまとめた「箱」
+
+::: small
+[https://engineer-life.dev/docker/](https://engineer-life.dev/docker/)
+:::
+
+:::
+
+::: {.column width="50%"}
+![](images/container.jpg){fig-alt="Men handling a shipping container"}
+:::
+
+::: small
+2023-03-09　小笠原・父島にて
+:::
+
+::::
+
+## イメージとは？
+
+:::: {.columns}
+
+::: {.column width="50%"}
+- コンテナを作る「型」
+:::
+
+::: {.column width="50%"}
+![](https://i.etsystatic.com/8961797/r/il/b1c06a/2322596149/il_570xN.2322596149_dxw8.jpg){fig-alt="Fox cookie cutter"}
+:::
+
+::::
+
+---
+
+![](images/container_vs_vm.jpg){fig-alt="Comparison of containers vs virtual machines" align="center"}
+
+::: small
+[https://www.docker.com/resources/what-container/](https://www.docker.com/resources/what-container/)
+:::
