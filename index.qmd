@@ -22,7 +22,7 @@ format:
 
 - 共有メモ： [https://hackmd.io/@joelnitta/H1gVyMlxh/edit](https://hackmd.io/@joelnitta/H1gVyMlxh/edit)
 
-- ワークショップ後調査：[https://forms.gle/uAQP6Uk5EGEgxdQq7](https://forms.gle/uAQP6Uk5EGEgxdQq7)
+- ワークショップ後アンケート：[https://forms.gle/uAQP6Uk5EGEgxdQq7](https://forms.gle/uAQP6Uk5EGEgxdQq7)
 
 ## 準備
 
